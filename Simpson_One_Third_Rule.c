@@ -19,7 +19,7 @@ int main(){
   sum = sum*(h/(3*k));
   printf("\nTime Required is %f", sum);
 }
-float simp (float x){
+float simp(float x){
 float y;
 y = 1/(1-x);
 return (y);
