@@ -9,19 +9,19 @@ void main()
     a2, b2;
     double a12, am, bm, vg, fv, fdv, vnew, sv; 
     int i, toi;
-    printf("Enter Pressure and Temp: ");
+    printf("Enter Pressure and Temperature: ");
     scanf("%lf %lf \n", &p, &t);
-    printf("Enter Univesal Gas Const.: ");
+    printf("Enter Univesal Gas Const. based on the Pressure and Temperature: ");
     scanf("%lf \n", &r);
-    printf("Enter Avg. Molecuar Wt.: ");
+    printf("Enter Avg. Molecuar Weight of Mixture: ");
     scanf("%lf \n", &mavg);
-    printf("Enter No. Iteration and Accuracy: ");
+    printf("Enter Number of Iteration and Accuracy Level: ");
     scanf("%lf %lf \n", &noi, &acc);
     printf("Enter mole fraction of two lquids: ");
     scanf("%lf %lf \n", &x1, &x2);
-    printf("Enter Const. of liquid_1: ");
+    printf("Enter constants a & b of liquid_1: ");
     scanf("%lf %lf \n", &a1, &b1);
-    printf("Enter COnst. of liquid_2: ");
+    printf("Enter constants a & b of liquid_2: ");
     scanf("%lf %lf \n", &a2, &b2);
     a12 = sqrt(a1*a2);
     am = (x1*x1*a1)+(2*(2*x1*x2*a12))+(x2*x2*a2);
@@ -44,5 +44,5 @@ void main()
         else
             vg = vnew;
     }
-    printf("No. of Iteration is not Sufficient");
+    printf("Number of Iteration is not Sufficient");
 }
