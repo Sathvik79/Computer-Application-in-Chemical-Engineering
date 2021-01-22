@@ -17,11 +17,11 @@ void main()
     scanf("%lf \n", &mavg);
     printf("Enter No. Iteration and Accuracy: ");
     scanf("%lf %lf \n", &noi, &acc);
-    printf("Enter mole fraction of CO2 and n-Butane: ");
+    printf("Enter mole fraction of two lquids: ");
     scanf("%lf %lf \n", &x1, &x2);
-    printf("Enter Const. of CO2: ");
+    printf("Enter Const. of liquid_1: ");
     scanf("%lf %lf \n", &a1, &b1);
-    printf("Enter COnst. of n-Butane: ");
+    printf("Enter COnst. of liquid_2: ");
     scanf("%lf %lf \n", &a2, &b2);
     a12 = sqrt(a1*a2);
     am = (x1*x1*a1)+(2*(2*x1*x2*a12))+(x2*x2*a2);
