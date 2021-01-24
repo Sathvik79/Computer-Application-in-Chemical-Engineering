@@ -4,7 +4,7 @@
 #include <math.h>
 void main(){
 	float P, t, acc, sumf, sumfd;
-	float a[i], b[i], c[i], x[i], bp[i];
+	float a[10], b[10], c[10], x[10], bp[10], y[10];
 	int n, noi;
 	printf("Enter the number of components: ");
 	scanf("%d", &n);
