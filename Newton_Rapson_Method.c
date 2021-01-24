@@ -24,7 +24,7 @@ void main()
     printf("Enter constants a & b of liquid_2: ");
     scanf("%lf %lf \n", &a2, &b2);
     a12 = sqrt(a1*a2);
-    am = (x1*x1*a1)+(2*(2*x1*x2*a12))+(x2*x2*a2);
+    am = (x1*x1*a1)+(2*x1*x2*a12)+(x2*x2*a2);
     bm = (x1*b1)+(x2*b2);
     printf("am: %lf \t bm: %lf \n", am, bm);
     vg = (r*t)/p;
