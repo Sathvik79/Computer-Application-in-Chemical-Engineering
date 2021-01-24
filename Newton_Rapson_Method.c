@@ -5,8 +5,7 @@
 #include <stdlib.h>
 void main()
 {
-    double p, t, r, mavg, acc, x1, x2, a1, b1,
-    a2, b2;
+    double p, t, r, mavg, acc, x1, x2, a1, b1, a2, b2;
     double a12, am, bm, vg, fv, fdv, vnew, sv; 
     int noi, i, toi;
     printf("Enter Pressure and Temperature: ");
