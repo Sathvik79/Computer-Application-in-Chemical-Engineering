@@ -1,6 +1,6 @@
 # Process-Simulation-Chemical-Engineering
 
-This Repository contains few programs mentioned below, they are writen in 'C' programing language:
+This Repository contains programs mentioned below, they are writen in 'C' programing language:
 1. Bubble Point for Multi-Component Mixture
 2. Isothermal Flash Drum
 3. Least Square Methog
