@@ -1,3 +1,5 @@
+// Simpson's 1/3rd Rule
+
 #include <stdio.h>
 #include <math.h>
 int main(){
