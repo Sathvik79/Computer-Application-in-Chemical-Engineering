@@ -5,10 +5,10 @@
 #include <stdlib.h>
 void main()
 {
-    double p, t, r, mavg, noi, acc, x1, x2, a1, b1,
+    double p, t, r, mavg, acc, x1, x2, a1, b1,
     a2, b2;
     double a12, am, bm, vg, fv, fdv, vnew, sv; 
-    int i, toi;
+    int noi, i, toi;
     printf("Enter Pressure and Temperature: ");
     scanf("%lf %lf \n", &p, &t);
     printf("Enter Univesal Gas Const. based on the Pressure and Temperature: ");
@@ -16,7 +16,7 @@ void main()
     printf("Enter Avg. Molecuar Weight of Mixture: ");
     scanf("%lf \n", &mavg);
     printf("Enter Number of Iteration and Accuracy Level: ");
-    scanf("%lf %lf \n", &noi, &acc);
+    scanf("%d %lf \n", &noi, &acc);
     printf("Enter mole fraction of two lquids: ");
     scanf("%lf %lf \n", &x1, &x2);
     printf("Enter constants a & b of liquid_1: ");
