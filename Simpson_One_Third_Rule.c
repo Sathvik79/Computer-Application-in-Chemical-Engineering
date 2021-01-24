@@ -20,7 +20,7 @@ int main(){
   printf("\nTime Required is %f", sum);
 }
 float simp(float x){
-float y;
-y = 1/(1-x);
-return (y);
+  float y;
+  y = 1/(1-x);
+  return (y);
 }
