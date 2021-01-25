@@ -1,0 +1,77 @@
+Bubble Point:
+n, p, a[i], b[i], c[i], x[i], bp[i]
+t=t+(bp[i]*x[i])
+acc, noi
+f = exp(a[i]-(b[i]/(t+c[i])))*x[i]/p, fd = f*(b[i]/pow(t+c[i], 2), sumf=sumf+f, sumfd=sumfd+fd
+bt=t-((sumf-1)/sumfd)
+if(fabs(bt-t)/t<=acc) y[k]=exp(a[k]-(b[k]/(t-c[k])))*x[k]/p 
+exit(0)
+t=bt
+error
+
+
+Dew Point:
+n, p, a[i], b[i], c[i], y[i], bp[i]
+t=t+bp[i]*y[i]
+acc, noi
+f=(p*y[i]/(exp(a[i]-b[i]/(t+c[i]))); fd=-f*(b[i]/pow(t+c[i], 2)), sumf=sumf+f, sumfd=sumfd+fd
+dt=t-((sumf-1)/sumfd)
+if(fabs(dt-1)/t<=acc)) x[k]=(p*y[k])/(exp(a[k]-(b[k]/(t+c[k]))));
+exit(0)
+t=dt
+error
+
+
+Distillaton Column:
+f, xf, xd, xb, rr, q, alfa
+d=f*(xf-xb)/(xd-xb), b=f-d, lr=rr*d, vr=lr+d, ls=lr+q*f, vs=ls-b, by=(alfa*xb)/(1+(alfa-1)*xb
+xi=xb, yi=yb
+while(xi<xf) i++, xi=((yi*vs)+(xb*b))/ls, yi=(alfa*xi)/(1+((alfa-1)*xi))
+
+
+Isothermal Flash Drum:
+n, t, F, a[i], b[i], c[i], z[i]
+p[i]=exp(a[i]-(b[i]/(t+c[i]))), pb=pb+z[i]*p[i], pd=pd+z[i]/p[i]
+pd=1/pd, pt=(pb+pd)/2 
+k[i]=p[i]/pt
+acc, noi, V
+f=(F*z[i]*k[i])/(F+V*(k[i]-1)), fd=-f*(k[i]-1)/(F+V*(k[i]-1)), sumf=sumf+f, sumfd=sumfd+fd
+vnew=V-((sumf-1)/sumfd)
+if(fabs(vnew-V)/V<=acc) V=new, L=F-V, y[i]=(F*z[i]*k[i])/(F+V*(k[i]-1)), x[i]=y[i]/k[i], xx=xx+x[i], yy=yy+y[i]
+exit(0)
+V=vnew
+Error
+
+
+Least Square Method:
+roh, mu, d, l, n, v[i]
+pd[i]=(32*mu*v[i]*l)/pow(d, 2), sumr=sumr+log((d*v[i]*roh)/mu, sumf=sumf+log((d*pd[i]*2)/(4*roh*v[i]*v[i]*l),
+sumrf=sumrf+log((d*v[i]*roh*l)/mu)+log((d*pd[i]*2)/(4*roh*v[i]*v[i]*l)), sumrr=sumrr+log((d*v[i]*roh)/mu+log((d*v[i]*roh)/mu)
+slope=((n*sumf)-(sumr*sumf))/((n*sumrr)-pow(sumr, 2)), intcpt=(sumf-(slope*sumr))/n, intcpt=exp(intcpt)
+
+
+Newton Rapson Method:
+p, t, r, mavg, x1, x2, a1, b1, a2, b2
+a12=sqrt(a1*a2), am=(x1*x1*a1)+(2*x1*x2*a12)+(x2*x2*a2), bm=(x1*b1)+(x2*b2), vg=(r*t)/p
+fv=p*pow(vg, 3)-pow(vg, 2)*(p*bm+r*t)+(vg+am)-(am-bm), fdv=3*pow(vg, 2)-2*vg*(p*bm+r*t)+am, vnew=vg-(fv/fdv), toi=fabs(vnew-vg)/vg
+if(toi<acc) sv=vnew/mavg
+else vg=vnew
+Error
+
+
+Runge Kutta Method:
+to, c, tf, h
+d1=h*f(t, c), d2=h*f(t+(h/2), c+(d1/2)), d3=h*f(t+(h/2), c+(d2/2)), d4=h*f(t+h, c+d3), d=(d1+(2*d2)+(2*d3)+d4)/6, c=c+d
+float f(float t, float c)
+y=0.78*pow(c, 2)
+return y
+
+
+Simpson's 1/3rd Rule:
+xo, xn, k, n
+h=(xn-xo)/n, sum=simp(xo)+simp(xn)
+for x=xo+h; x<xn; x=x+2*h sum=sum+4*simp(x)
+for x=xo+2*h; x<xn-h; x=x+2*h sum=sum+2*simp(x)
+sum=sum+(h/(3*k))
+float f(float x)
+y=1/(1-x)
