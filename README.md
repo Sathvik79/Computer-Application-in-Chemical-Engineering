@@ -10,3 +10,5 @@ This Repository contains programs mentioned below, they are writen in 'C' progra
 7. Newton Rapson Method
 8. Runge Kutta Method
 9. Simpson's 1/3rd Rule
+
+Instruction.txt file contains the algorithum/reference for some the above programs
